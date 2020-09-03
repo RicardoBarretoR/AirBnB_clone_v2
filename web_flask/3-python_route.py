@@ -26,8 +26,10 @@ def DisplayC(text):
 @app.route('/python', strict_slashes=False)
 @app.route('/python/<text>', strict_slashes=False)
 def DisplayPython(text='is cool'):
-    """Function showing the default value of text"""
-    return "python {}".format(text.replace('_', ' '))
+    """Function showing Python and the text input
+       and a decorator in case of the default value of text
+    """
+    return "Python {}".format(text.replace('_', ' '))
 
 if __name__ == '__main__':
     app.run(host="0.0.0.0", port=5000)
