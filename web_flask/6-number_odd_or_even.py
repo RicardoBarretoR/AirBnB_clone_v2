@@ -50,11 +50,11 @@ def number_odd_or_even(n):
        integer and if is odd or even
     """
     if n % 2 == 0:
-        string = 'even'
+        s = 'even'
     else:
-        string = 'odd'
+        s = 'odd'
 
-    return render_template('6-number_odd_or_even.html', n=n, string=s)
+    return render_template('6-number_odd_or_even.html', n=n, s=s)
 
 
 if __name__ == '__main__':
